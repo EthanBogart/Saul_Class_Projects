@@ -1,6 +1,9 @@
 package CMPS_3240_6240Fall16
 
 import edu.illinois.cs.cogcomp.lbjava.learn.SparseNetworkLearner
+import edu.illinois.cs.cogcomp.lbjava.learn.SupportVectorMachine
+import edu.illinois.cs.cogcomp.lbjava.learn.SparseAveragedPerceptron
+
 
 /**
   * Created by Parisa on 9/13/16.
