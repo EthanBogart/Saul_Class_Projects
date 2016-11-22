@@ -32,7 +32,7 @@ public class Facility {
     }
 
     public Facility (String[] features) {
-        this.id = Integer.parseInt(features[0]);
+        //this.id = Integer.parseInt(features[0].replace("\"",""));
         this.name = features[1];
         this.latitude = Double.parseDouble(features[2]);
         this.longitude = Double.parseDouble(features[3]);

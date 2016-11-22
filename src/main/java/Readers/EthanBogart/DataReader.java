@@ -8,10 +8,10 @@ import java.util.ArrayList;
  * Created by Ethan Bogart on 10/5/16.
  */
 public class DataReader {
-    public ArrayList<String[]> facilities;
+    public ArrayList<Facility> facilities;
 
     public DataReader() {
-        facilities = new ArrayList<String[]>();
+        facilities = new ArrayList<Facility>();
 
         String data = System.getProperty("user.dir") + "/data/EthanBogart/data.csv";
         BufferedReader reader;
@@ -22,9 +22,13 @@ public class DataReader {
             reader = new BufferedReader(new FileReader(data));
 
             line = reader.readLine();
+            line = reader.readLine();
             while (line != null) {
-                String[] facility = line.split(",");
-                facilities.add(facility);
+                String trimmed = line.replace("\"\"","");
+                String[] facilityAttributes = line.split(",");
+                Facility facilityObject = new Facility(facilityAttributes);
+
+                facilities.add(facilityObject);
 
                 line = reader.readLine();
             }

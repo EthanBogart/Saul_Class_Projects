@@ -1,9 +1,8 @@
-package EthanBogart
+package Readers.EthanBogart
 
 import edu.illinois.cs.cogcomp.saul.datamodel.DataModel
 import scala.collection.JavaConversions._
 import Readers.EthanBogart
-import Readers.EthanBogart.Facility
 
 /**
   * Created by ethan on 10/28/16.
