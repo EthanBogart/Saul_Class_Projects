@@ -20,8 +20,8 @@ object EPAApp extends App {
 
   EPADataModel.facility.populate(trainSet)
   EPADataModel.facility.populate(testSet,false)
-  EPAClassifier.randomForest.learn(10)
-  EPAClassifier.randomForest.test()
+  EPAClassifier.fullSVMClassifier.learn(10)
+  EPAClassifier.fullSVMClassifier.test()
 
 
 }

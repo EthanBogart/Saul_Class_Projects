@@ -12,9 +12,9 @@ public class Facility {
     public double longitude;
     public double percentMinority;
     public double populationDensity;
-    public int daysSinceInspection;
+    public double daysSinceInspection;
     public String complianceStatus;
-    public int TRIReleases;
+    public double TRIReleases;
 
 
     public Facility (int id, String name, double latitude, double longitude, double percentMinority,
@@ -33,13 +33,13 @@ public class Facility {
 
     public Facility (String[] features) {
         //this.id = Integer.parseInt(features[0].replace("\"",""));
-        this.name = features[1];
-        this.latitude = Double.parseDouble(features[2]);
-        this.longitude = Double.parseDouble(features[3]);
-        this.percentMinority = Double.parseDouble(features[4]);
-        this.populationDensity = Double.parseDouble(features[5]);
-        this.daysSinceInspection = Integer.parseInt(features[6]);
-        this.complianceStatus = features[7];
-        this.TRIReleases = Integer.parseInt(features[9]);
+        this.name = features[2];
+        this.latitude = Double.parseDouble(features[3]);
+        this.longitude = Double.parseDouble(features[4]);
+        this.percentMinority = Double.parseDouble(features[5]);
+        this.populationDensity = Double.parseDouble(features[6]);
+        this.daysSinceInspection = Double.parseDouble(features[7]);
+        this.complianceStatus = features[8];
+        this.TRIReleases = Double.parseDouble(features[10]);
     }
 }
